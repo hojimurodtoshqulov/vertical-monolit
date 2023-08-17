@@ -5,9 +5,9 @@ import i18next from "i18next";
 // import MobileNav from "../components/mobileNav";
 
 const Layout = ({ children }) => {
-  const handleClick = (e) => {
-    i18next.changeLanguage(e.target.value);
-  };
+  // const handleClick = (e) => {
+  //   i18next.changeLanguage(e.target.value);
+  // };
 
   return (
     <Suspense fallback="loading">
