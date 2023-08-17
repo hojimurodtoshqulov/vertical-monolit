@@ -1,0 +1,34 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+@import "./scss/varuables.scss";
+::-webkit-scrollbar {
+	width: 8px;
+	height: 0px;
+}
+::-webkit-scrollbar-button {
+	display: none;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 7px  $primary;
+	background: #000;
+}
+::-webkit-scrollbar-thumb {
+	width: 5px;
+	background:  $primary;
+	border-radius: 5px !important;
+	box-shadow: 0 0 10px #000;
+}
+.active {
+	color: $primary;
+}
