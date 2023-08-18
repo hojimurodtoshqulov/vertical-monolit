@@ -1,0 +1,103 @@
+@import "../../styles/variables.scss";
+
+.workscard {
+  padding: 130px 0;
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    .card {
+      border-radius: 25px;
+      background: linear-gradient(
+          180deg,
+          rgba(5, 121, 121, 0) 57.8%,
+          rgba(6, 101, 101, 0.5) 77.86%
+        ),
+        url(/public/workcard.png), lightgray 40% / cover no-repeat;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      height: 400px;
+      width: 43%;
+      position: relative;
+      .h2 {
+        position: absolute;
+        bottom: 30px;
+        margin: 0;
+        left: 24px;
+        color: #fff;
+        font-family: Noto Sans;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .card22{
+      background: linear-gradient(
+          180deg,
+          rgba(5, 121, 121, 0) 57.8%,
+          rgba(6, 101, 101, 0.5) 77.86%
+        ),
+        url(/public/workcard2.png), lightgray 40% / cover no-repeat;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .workscard {
+      .cards {
+        .card {
+          .h2 {
+            font-size: 35px;
+          }
+        }
+    }
+  }
+}
+
+@media (max-width: $md) {
+    .workscard{
+            .cards{
+                .card{
+                background-position: center;
+
+                  .h2{
+                    font-size: 26px;
+                  }
+                }
+            }
+    }
+}
+
+@media (max-width: $sm) {
+  .workscard{
+          .cards{
+              .card{
+                width: 69%;
+                background-size: cover;
+                background-position: center;
+
+                .h2{
+                  font-size: 26px;
+                }
+              }
+          }
+  }
+}
+@media (max-width: $xs) {
+  .workscard{
+          .cards{
+              .card{
+                width: 84%;
+                .h2{
+                  font-size: 20px;
+                }
+              }
+          }
+  }
+}
