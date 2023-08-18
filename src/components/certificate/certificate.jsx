@@ -1,38 +1,38 @@
-import "./projects.scss";
+import "./certificate.scss";
 import { useState } from "react";
 import Slider from "react-slick";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import img1 from "../../media/u2.png";
-import img2 from "../../media/u7.png";
-import img3 from "../../media/u8.png";
-import img4 from "../../media/u5.png";
-import img5 from "../../media/logo_white.png";
-import logo1 from "../../media/cholquvar.png";
-import logo2 from "../../media/paxtazor.png";
-const Projects = () => {
+import img1 from "../../assets/show1.1.png";
+import img2 from "../../assets/show5.jpg";
+import img3 from "../../assets/show6.jpg";
+import img4 from "../../assets/show4.webp";
+// import img5 from "../../assets/logo_white.png";
+// import logo1 from "../../assets/cholquvar.png";
+// import logo2 from "../../assets/paxtazor.png";
+const Certificates = () => {
 	const data = [
 		{
 			img: img1,
-			logo: logo1,
+			// logo: logo1,
 			link: "/cho'lquvar",
 			title: "Cho'lquvar",
 		},
 		{
 			img: img2,
-			logo: logo2,
+			// logo: logo2,
 			link: "/paxtazor",
 			title: "Paxtazor",
 		},
 		{
 			img: img3,
-			logo: logo1,
+			// logo: logo1,
 			link: "/cho'lquvar",
 			title: "Bla bla",
 		},
 		{
 			img: img4,
-			logo: logo2,
+			// logo: logo2,
 			link: "/paxtazor",
 			title: "Big house",
 		},
@@ -72,10 +72,9 @@ const Projects = () => {
 							<div
 								key={index}
 								className={index === imageIndex ? "slide active" : "slide"}
-								data-aos="fade-up"
 								onClick={scrollToTop}
 							>
-								<Link onClick={scrollToTop} to={item.link} data-aos="fade-up">
+								<Link onClick={scrollToTop} to={item.link} >
 									<img className="img" src={item.img} alt={item.img} onClick={scrollToTop} />
 									<img className="link" src={item.logo} alt={item.logo} />
 								</Link>
@@ -84,12 +83,12 @@ const Projects = () => {
 					</Slider>
 				</div>
 			</div>
-			<img className="logo1" src={img5} alt={img5} data-aos="fade-up" />
+			{/* <img className="logo1" src={img5} alt={img5} data-aos="fade-up" />
 			<div className="logo2">
 				<img data-aos="fade-up" src={img5} alt={img5} />
-			</div>
+			</div> */}
 		</div>
 	);
 };
 
-export default Projects;
+export default Certificates;

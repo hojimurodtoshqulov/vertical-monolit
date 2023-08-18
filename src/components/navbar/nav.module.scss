@@ -16,12 +16,17 @@
 	height: 10vh;
 	margin: 0 auto;
 	transition: 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	&__container {
 		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		transition: 0.3s;
+		color: $light;
+		
 		a {
 			font-family: $font_titles;
 			font-size: 20px;
@@ -51,14 +56,11 @@
 			}
 		}
 		&_logo {
-			height: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			gap: 11px;
+			width: 9%;
+			height: 60%;
 			filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.869));
 			img {
-				width: auto;
+				width: 100%;
 				height: 60%;
 				transition: 2s;
 				&:hover {
@@ -88,7 +90,7 @@
 				&:hover {
 					span {
 						width: 100%;
-						border-bottom: 3px solid $light;
+						border-bottom: 3px solid $primary;
 						opacity: 1;
 					}
 				}
@@ -208,17 +210,17 @@
 					opacity: 0;
 					width: 1%;
 					height: 0;
-					border-bottom: 3px solid $light;
+					border-bottom: 3px solid $primary;
 				}
 			}
 			&_ru {
-				background-image: url("../../media/lang_ru.png");
+				background-image: url("../../assets/lang_ru.png");
 				background-size: cover;
 				width: 100%;
 				height: 100%;
 			}
 			&_uz {
-				background-image: url("../../media/lang_uz.png");
+				background-image: url("../../assets/lang_uz.png");
 				background-size: cover;
 				width: 100%;
 				height: 100%;
@@ -234,7 +236,7 @@
 			button {
 				a {
 					&:hover {
-						color: $light;
+						color: $primary;
 					}
 				}
 			}

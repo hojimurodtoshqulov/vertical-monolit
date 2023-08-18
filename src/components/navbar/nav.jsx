@@ -6,20 +6,23 @@ import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { AiFillCaretDown } from "react-icons/ai";
 import { FaPhone } from "react-icons/fa";
-
 const Nav = () => {
 	const [navColorBg, setnavColorBg] = useState(0);
 	const [navSize, setnavSize] = useState("12vh");
 	const [navSizeMobile, setnavSizeMobile] = useState("9.4vh");
 	const [navBg, setNavBg] = useState("transparent");
 	const [navLinkColor, setNavLinkColor] = useState("");
+	const [navBoxShadow, setNavBoxShadow] = useState("inset 0px 0px 0px #ff00");
 	// const [navContainerBR, setNavContainerBR] = useState("2px solid #fff");
 	const listenScrollEvent = () => {
 		window.scrollY > 80 ? setnavColorBg(10) : setnavColorBg(0);
 		window.scrollY > 80 ? setnavSize("10vh") : setnavSize("12vh");
 		window.scrollY > 80 ? setNavLinkColor("#fff") : setNavLinkColor("");
 		window.scrollY > 80 ? setnavSizeMobile("9.4vh") : setnavSizeMobile("9.4vh");
-		window.scrollY > 80 ? setNavBg("#a9a7a749") : setNavBg("transparent");
+		window.scrollY > 80 ? setNavBg("#009d9d1d") : setNavBg("transparent");
+		window.scrollY > 80
+			? setNavBoxShadow("inset 0px 0px 50px #009D9D")
+			: setNavBoxShadow("inset 0px 0px 0px #ff00");
 		// window.scrollY > 80
 		// 	? setNavContainerBR("2px solid #ff00")
 		// 	: setNavContainerBR("2px solid #fff");
@@ -63,10 +66,11 @@ const Nav = () => {
 					background: navBg,
 					transition: "all 0.8s",
 					height: width(),
+					boxShadow: navBoxShadow,
 				}}
 			>
-				<div className="container">
-					<div className={scss.nav__container} style={{ height: width() }}>
+				<div className="container" data-aos="fade-left">
+					<div className={scss.nav__container}>
 						<Link
 							style={{ color: navLinkColor }}
 							onClick={scrollToTop}
@@ -76,22 +80,21 @@ const Nav = () => {
 							<img src={navLogo} alt={navLogo} />
 						</Link>
 						<div className={scss.nav__container_links}>
-							{/* company */}
 							<NavLink
 								style={{ color: navLinkColor }}
 								to="/company"
 								onClick={scrollToTop}
 							>
-								{t("nav.company")} <span></span>
+								{t("О нас")} <span></span>
 							</NavLink>{" "}
 							<Link
 								style={{ color: navLinkColor }}
 								onClick={scrollToTop}
 								className={scss.dropdown}
 							>
-								{t("nav.projects")}
-								<AiFillCaretDown />
-								<div className={scss.dropdownItems}>
+								{t("Проекты")}
+								{/* <AiFillCaretDown /> */}
+								{/* <div className={scss.dropdownItems}>
 									<div>
 										<Link to="/cho'lquvar" onClick={scrollToTop}>
 											{t("Cho'lquvar")}
@@ -100,31 +103,24 @@ const Nav = () => {
 											{t("Paxtazor")}
 										</Link>
 									</div>
-								</div>
+								</div> */}
+								<span></span>
 							</Link>{" "}
 							<NavLink
 								style={{ color: navLinkColor }}
 								to="/news"
 								onClick={scrollToTop}
 							>
-								{t("nav.news")} <span></span>
+								{t("Новости")} <span></span>
 							</NavLink>{" "}
 							<NavLink
 								style={{ color: navLinkColor }}
 								to="/contact"
 								onClick={scrollToTop}
 							>
-								{t("nav.contact")} <span></span>
+								{t("Контакты")} <span></span>
 							</NavLink>
-							{/* <NavLink
-								style={{ color: navLinkColor }}
-								to="/layout"
-								onClick={scrollToTop}
-							>
-								{t("nav.layout")} <span></span>
-							</NavLink> */}
 						</div>
-						{/* <Toggle color={navLinkColor} /> */}
 						<div className={scss.nav__container_lang}>
 							<span
 								className={scss.nav__container_lang_ru}
@@ -132,14 +128,13 @@ const Nav = () => {
 								value={"ru"}
 							>
 								<button
-									className={currentLang === "ru" && scss.active}
+									className={scss.ru}
+									// className={currentLang === "ru" && scss.active}
 									value={"ru"}
-									onClick={onClick}
+									// onClick={onClick}
 									type="btn"
 									style={{ color: langColor }}
-								>
-									{/* {t("ru")} */}
-								</button>
+								></button>
 								<div></div>
 							</span>
 							<span
@@ -148,20 +143,18 @@ const Nav = () => {
 								value={"uz"}
 							>
 								<button
-									className={currentLang === "uz" && scss.active}
+									className={scss.uz}
 									value={"uz"}
-									onClick={onClick}
+									// onClick={onClick}
 									type="btn"
 									style={{ color: langColor }}
-								>
-									{/* {t("uz")} */}
-								</button>
+								></button>
 								<div></div>
 							</span>
 						</div>
 						<div className={scss.nav__container_phoneLink}>
-							<a href="tel:+998336450555">+998 33 645 05 55</a>
-							<a href="tel:+998336450555">{<FaPhone />}</a>
+							<a href="tel:+998777777777">+998 77 777 77 77</a>
+							<a href="tel:+998777777777">{<FaPhone />}</a>
 						</div>
 					</div>
 				</div>

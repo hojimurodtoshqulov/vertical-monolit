@@ -9,7 +9,6 @@ const RoutesWrapper = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
-
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>

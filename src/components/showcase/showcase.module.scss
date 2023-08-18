@@ -1,4 +1,4 @@
-@import "../../scss/varuables.scss";
+@import "../../styles/variables.scss";
 .header {
 	position: relative;
 	width: 100%;
@@ -12,7 +12,7 @@
 		height: 100%;
 		&_elements {
 			position: absolute;
-			top: 25vh;
+			top: 35vh;
 			left: 15%;
 			z-index: 12;
 			display: flex;
@@ -21,15 +21,16 @@
 			justify-content: center;
 			gap: 20px;
 			width: 70%;
+			color: $light;
 			text-align: center;
 			@media (min-width: $xxl) {
 				top: 30vh;
 			}
 			h1 {
-				font-size: 170px;
+				font-size: 150px;
 				font-family: $font_titles;
 				font-weight: 700;
-				// line-height: 40px;
+				line-height: 15vh;
 				text-align: center;
 				text-shadow: 2px 2px 10px #00000088;
 				@media (min-width: $xxl) {
@@ -83,7 +84,7 @@
 			right: 0%;
 			top: 0%;
 			z-index: 1;
-			// object-fit: cover;
+			object-fit: cover;
 			// transform: rotate(-100deg);
 			// animation: car 2s cubic-bezier(0.87, -0.17, 0.16, 1.27) 1 alternate
 			// 	forwards;
@@ -97,7 +98,7 @@
 			right: 0%;
 			top: 0%;
 			z-index: 0;
-			// object-fit: cover;
+			object-fit: cover;
 			// transform: rotate(-100deg);
 			// animation: car 2s cubic-bezier(0.87, -0.17, 0.16, 1.27) 1 alternate
 			// 	forwards;
@@ -137,10 +138,19 @@
 	@media (min-width: 2410px) {
 		height: 1070px;
 	}
+	.bgDiv {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, #009d9d5f, #009d9d40, #009d9d5f);
+	}
 }
 @media (max-width: $xl) {
 	.header {
-		height: 600px;
+		height: 90vh;
 		&__container {
 			&_elements {
 				position: absolute;
@@ -158,7 +168,7 @@
 					font-size: 100px;
 					font-family: $font_titles;
 					font-weight: 700;
-					line-height: 40px;
+					line-height: 10vh;
 					margin-bottom: 20px;
 
 					span {
@@ -177,7 +187,7 @@
 }
 @media (max-width: $md) {
 	.header {
-		height: 500px;
+		height: 80vh;
 		&__container {
 			&_elements {
 				h1 {
@@ -200,12 +210,13 @@
 }
 @media (max-width: $sm) {
 	.header {
-		height: 400px;
+		height: 80vh;
 		&__container {
 			&_elements {
 				gap: 0px;
 				h1 {
 					font-size: 50px;
+					line-height: 6vh;
 				}
 				p {
 					font-size: 20px;

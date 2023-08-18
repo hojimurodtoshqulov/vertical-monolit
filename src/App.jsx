@@ -6,7 +6,7 @@ import Layout from "./layout/layout";
 import RoutesWrapper from "./routes/route";
 const App = () => {
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== null) {
       Aos.init({ duration: 1000, mirror: true });
     }
   }, []);
