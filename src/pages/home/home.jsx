@@ -7,7 +7,7 @@ import HomeAbout from "../../components/HomeAbout";
 const Home = () => {
   return (
     <div>
-      <Header />
+      <Header head1={"Architecture"} head2={"center."} />
       <div style={{ margin: "50px 10px" }}>
         <Categories />
       </div>
