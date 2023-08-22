@@ -1,7 +1,7 @@
 import scss from "./HomeAbout.module.scss";
-import img1 from "../category/icons/home-about-1.png";
-import img2 from "../category/icons/home-about-2.png";
-import img3 from "../category/icons/home-about-3.png";
+import img1 from "../../assets/home-about-1.png";
+import img2 from "../../assets/home-about-2.png";
+import img3 from "../../assets/home-about-3.png";
 
 const HomeAbout = () => {
   return (
@@ -21,12 +21,12 @@ const HomeAbout = () => {
         </div>
         <div className={scss.section__right}>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim omnis
-            dolorem velit sed labore veritatis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id hic,
+            veniam non eos accusantium quas ipsum dolore amet.
           </p>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim omnis
-            dolorem velit sed labore veritatis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id hic,
+            veniam non eos accusantium quas ipsum dolore amet.
           </p>
         </div>
       </div>
