@@ -3,6 +3,7 @@ import Certificates from "../../components/certificate/certificate";
 import Header from "../../components/showcase/showcase";
 import Categories from "../../components/category";
 import HomeAbout from "../../components/HomeAbout";
+import Adventure from "../../components/adventure";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <HomeAbout />
       </div>
       <Certificates />
+      <Adventure />
     </div>
   );
 };

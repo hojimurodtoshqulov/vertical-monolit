@@ -1,5 +1,6 @@
 import Showcase from "../../components/showcase/showcase";
 import AboutIntro from "../../components/aboutIntro";
+import Adventure from "../../components/adventure";
 
 const AboutUs = () => {
   return (
@@ -11,6 +12,7 @@ const AboutUs = () => {
         }
       />
       <AboutIntro />
+      <Adventure />
     </>
   );
 };
