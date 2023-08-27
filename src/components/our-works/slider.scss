@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss";
+
+.splide__arrow--next,
+.splide__arrow--prev {
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: 2px solid $light;
+  border-radius: 10px;
+  transform: translateY(-50%) rotate(45deg);
+  opacity: 1;
+  transition: 0.3s;
+  svg {
+    opacity: 1;
+    width: 25px;
+    height: 25px;
+    transform: rotate(-45deg);
+    path {
+      transition: 0.3s;
+      fill: $light;
+    }
+  }
+  @media (max-width: $sm) {
+    width: 40px;
+    height: 40px;
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  &:hover {
+    border-color: $primary;
+    svg path {
+      fill: $primary;
+    }
+  }
+}
+.splide__arrow--prev {
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.splide__pagination {
+  position: relative;
+  top: 10px;
+  &__page {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #22b8b8;
+    background: none;
+  }
+  .is-active {
+    transform: scale(1);
+    background-color: #22b8b8;
+  }
+}
