@@ -3,6 +3,7 @@ import { Nav } from "../components/navbar/nav";
 import { useEffect } from "react";
 import Aos from "aos";
 import Footer from "../components/footer";
+import FormMap from "../components/form_map";
 // import i18next from "i18next";
 // import MobileNav from "../components/mobileNav";
 
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
           {/* <div className="mobileNav"><MobileNav /></div> */}
         </>
         {children}
+        <FormMap />
         <Footer />
       </div>
     </Suspense>
