@@ -45,10 +45,33 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    iframe {
+    &__iframe {
       width: 100%;
       height: calc(100% - 70px);
-      border: none;
+      background-color: $grey;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      p {
+        font-weight: 600;
+        color: $light;
+        font-size: 28px;
+        text-align: center;
+        @media (max-width: $sm) {
+          font-size: 16px;
+        }
+      }
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
     }
     .map__footer {
       width: 100%;

@@ -9,10 +9,14 @@ const FormMap = () => {
       <h3 className={scss.heading}>Мы находимся тут</h3>
       <div className={scss.form__map}>
         <div className={scss.map}>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47962.75854538797!2d69.2518912!3d41.2942336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bf3870c714d%3A0x6ddece20c220333b!2sMagic%20City%20Park!5e0!3m2!1sen!2s!4v1693118668940!5m2!1sen!2s"
-            loading="lazy"
-          ></iframe>
+          <div className={scss.map__iframe}>
+            <p>There is location map here.</p>
+            <p>Check your network or wait some time, please!</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47962.75854538797!2d69.2518912!3d41.2942336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bf3870c714d%3A0x6ddece20c220333b!2sMagic%20City%20Park!5e0!3m2!1sen!2s!4v1693118668940!5m2!1sen!2s"
+              loading="lazy"
+            ></iframe>
+          </div>
           <div className={scss.map__footer}>
             <a
               href="https://www.google.com/maps?ll=41.304287,69.246528&z=11&t=m&hl=en&gl=US&mapclient=embed&cid=7916991835055076155"
