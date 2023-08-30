@@ -1,0 +1,132 @@
+@import "../../styles/variables.scss";
+
+.perfectWrapper{
+    width: 100%;
+    margin: 100px 0;
+    background-image: url("../../assets/perfectback.png");
+    .perfect{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        &__left{
+            width: 40%;
+            color: white;
+            h3{
+                font-size: 1.8rem;
+                line-height: 1.8rem;
+                margin: 1rem 0;
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        &__right{
+            width: 44%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: $xl) {
+    .perfectWrapper{
+        .perfect{    
+            &__left{
+                width: 50%;
+                h3{
+                    font-size: 1.6rem;
+                    line-height: 1.4rem;
+                    margin: 1rem 0;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+            &__right{
+                width: 40%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    .perfectWrapper{ 
+        .perfect{      
+            &__left{
+              
+                h3{
+                    font-size: 1.6rem;
+                    line-height: 0rem;
+                    margin: 1rem 0;
+                }
+                p{
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+            }
+            &__right{
+                width: 40%;       
+            }
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .perfectWrapper{
+        .perfect{
+            flex-direction: column;
+            row-gap: 2rem;
+            &__left{
+                width: 80%;
+                h3{
+                    font-size: 1.6rem;
+                    line-height: 1.6rem;
+                    margin: 1rem 0;
+                    text-align: center;
+                }
+                p{
+                    text-align: justify;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+            &__right{
+                width: 80%;
+               
+            }
+        }
+    }
+}
+
+@media (max-width: $xs) {
+    .perfectWrapper{
+        .perfect{
+            &__left{
+                width: 95%;
+                h3{
+                    font-size: 1.2rem;
+                    line-height: 1.2rem;
+                    margin: .8rem 0;
+                    text-align: center;
+                }
+                p{
+                    text-align: justify;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+            &__right{
+                width: 95%;
+            }
+        }
+    }
+}
