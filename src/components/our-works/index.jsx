@@ -1,4 +1,3 @@
-import React from "react";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import scss from "./ourworks.module.scss";
 import "./slider.scss";
