@@ -1,15 +1,15 @@
 import "./styles/main.scss";
 
-import Aos from "aos";
-import { useEffect } from "react";
+// import Aos from "aos";
+// import { useEffect } from "react";
 import Layout from "./layout/layout";
 import RoutesWrapper from "./routes/route";
 const App = () => {
-  useEffect(() => {
-    if (typeof window !== null) {
-      Aos.init({ duration: 1000, mirror: true });
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== null) {
+  //     Aos.init({ duration: 1000, mirror: true });
+  //   }
+  // }, []);
   return (
     <>
       <Layout>
