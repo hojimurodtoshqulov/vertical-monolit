@@ -1,0 +1,68 @@
+@import "../../styles/variables.scss";
+.quality {
+	position: relative;
+	width: 100%;
+	background: $light;
+	padding: 100px 0;
+	overflow-x: hidden;
+	&__description {
+		width: 70%;
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+		font-size: 55px;
+		color: $primary;
+		font-weight: 600;
+		@media (max-width: $md) {
+			font-size: 35px;
+		}
+		@media (max-width: $sm) {
+			font-size: 25px;
+		}
+		span {
+			font-weight: 800;
+		}
+	}
+	&__img1 {
+		position: absolute;
+		z-index: 1;
+		height: 60%;
+		width: 70%;
+		object-fit: contain;
+		opacity: 0.1;
+		transform: translate(20%, -80%);
+	}
+	&__img2 {
+		position: absolute;
+		top: 0%;
+		left: -8%;
+		z-index: 1;
+		height: auto;
+		width: 16%;
+		object-fit: cover;
+		opacity: 0.3;
+		@media (max-width: $md) {
+			width: 26%;
+		}
+		@media (max-width: $sm) {
+			width: 30%;
+		}
+	}
+	&__img3 {
+		position: absolute;
+		bottom: 0%;
+		right: -8%;
+		z-index: 1;
+		height: auto;
+		width: 16%;
+		object-fit: cover;
+		opacity: 0.3;
+		@media (max-width: $md) {
+			width: 26%;
+		}
+		@media (max-width: $sm) {
+			width: 30%;
+		}
+	}
+}

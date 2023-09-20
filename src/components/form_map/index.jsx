@@ -1,4 +1,3 @@
-import React from "react";
 import scss from "./form_map.module.scss";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -28,11 +27,11 @@ const FormMap = () => {
               </>
               <span>Беш Агач, Furkat St, Tashkent</span>
             </a>
-            <a href="tel:+123456789" target="_blank" rel="noopener noreferrer">
+            <a href="tel:+998991234567"  rel="noopener noreferrer">
               <>
                 <FaPhoneAlt />
               </>
-              <span>+998 123 45 67</span>
+              <span>+998 99 123 45 67</span>
             </a>
             <a
               href="mailto:hello@gmail.com"
