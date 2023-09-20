@@ -3,19 +3,19 @@
 .category__wrapper {
 	width: 100%;
 	min-height: 220px;
-	box-shadow: 0px 3.816283702850342px 20.989561080932617px 0px
-		rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 3.8px 20.9px 0px rgba(0, 0, 0, 0.25);
 	background-image: url("../../assets/category-bg.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 10px;
-	padding: 20px;
+	padding: 40px 50px;
 	text-align: center;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
 	align-items: center;
-	gap: 15px;
+	gap: 25px;
 	margin-top: -110px;
 	position: relative;
 	z-index: 3;
@@ -40,8 +40,8 @@
 	gap: 8px;
 	color: $light;
 	&__icon {
-		width: 20%;
-		height: 20%;
+		width: 16%;
+		height: 15%;
 		display: grid;
 		place-items: center;
 		img {
