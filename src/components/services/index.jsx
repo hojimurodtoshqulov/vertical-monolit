@@ -1,14 +1,13 @@
-import React from "react";
 import Title from "../title";
 import scss from "./services.module.scss";
 // images //
 import img1 from "../../assets/man-slice1.png";
 import img2 from "../../assets/man-slice2.png";
 import img3 from "../../assets/man-slice3.png";
-import border from "../../assets/border.png";
+// import border from "../../assets/border.png";
 // images //
 
-const Services = ({}) => {
+const Services = () => {
 	return (
 		<>
 			<div className="container">
