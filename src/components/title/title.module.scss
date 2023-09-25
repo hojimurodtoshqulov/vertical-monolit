@@ -5,20 +5,28 @@
 	font-weight: 500;
 	line-height: 50px;
 	letter-spacing: 1px;
-}
-
-@media (max-width: $lg) {
-	.title {
-		font-size: 1.8rem;
-		font-weight: 500;
-		line-height: 0.5rem;
+	transition: 0.3s;
+	position: relative;
+	z-index: 4;
+	width: max-content;
+	&:hover {
+		transform: scale(1.02);
 	}
-}
-
-@media (max-width: $sm) {
-	.title {
-		font-size: 1.6rem;
-		font-weight: 500;
-		line-height: 0.5rem;
+	@media (max-width: $lg) {
+		font-size: 40px;
+		line-height: 40px;
+	}
+	@media (max-width: $md) {
+		font-size: 35px;
+		line-height: 35px;
+	}
+	span {
+		position: absolute;
+		top: -1%;
+		left: -50px;
+		z-index: -1;
+		color: #98989855;
+		// color: #ffffff75;
+		font-size: 120px;
 	}
 }

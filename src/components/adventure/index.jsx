@@ -1,3 +1,4 @@
+import Title from "../title";
 import add from "./add.module.scss";
 
 export default function Adventure() {
@@ -13,7 +14,8 @@ export default function Adventure() {
 				<div className="container">
 					<div className={add.addbox}>
 						<div className={add.leftside}>
-							<h2 className={add.h22}>Наша преимущества</h2>
+							{/* <h2 className={add.h22}></h2> */}
+							<Title titleName={"Наша преимущества"} color="white" spanColor="#ffffff27" />
 							<div className={add.card}>
 								<fieldset className={add.border}>
 									<legend className={add.legend}>

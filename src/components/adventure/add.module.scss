@@ -5,6 +5,10 @@
 	padding-top: 120px;
 	padding-bottom: 110px;
 	position: relative;
+	@media (max-width: $md) {
+		padding-top: 80px;
+		padding-bottom: 70px;
+	}
 	.vector {
 		position: absolute;
 		top: 5%;
@@ -30,16 +34,13 @@
 			justify-content: center;
 			gap: 49px;
 			flex-wrap: wrap;
-
-			.h22 {
+			h2 {
 				width: 30%;
-				color: #fff;
-				font-family: sans-serif;
-				font-size: 53px;
-				font-style: normal;
-				font-weight: 400;
-				line-height: 59px;
 				margin: 0;
+				@media (max-width: $md) {
+					width: 50%;
+					margin: 20px 0 0 0;
+				}
 			}
 			.card {
 				width: 30%;

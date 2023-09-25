@@ -2,6 +2,9 @@
 .services__head {
 	text-align: center;
 	margin: 2rem 0;
+	h2 {
+		margin: 0 auto;
+	}
 }
 .services {
 	width: 100%;
@@ -63,6 +66,11 @@
 				font-weight: 400;
 				line-height: 25px;
 				color: $grey;
+				transition: 0.3s;
+				&:hover {
+					color: $dark;
+					transform: scale(1.02);
+				}
 			}
 		}
 		hr {

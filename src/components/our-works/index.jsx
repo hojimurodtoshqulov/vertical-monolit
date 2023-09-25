@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import img1 from "../../assets/show7.png";
 import img2 from "../../assets/show2.jpg";
 import img3 from "../../assets/show3.jpg";
+import Title from "../title";
 
 const items = [
 	{
@@ -33,11 +34,12 @@ const OurWorks = () => {
 			<img src="/vlogo.png" alt="/vlogo.png" className={scss.vector} />
 			<img src="/vlogo2.png" alt="/vlogo2.png" className={scss.vector2} />
 			<div className={scss.container}>
-				<h3 className={scss.heading}>Наши работы</h3>
+				<Title titleName={"Наши работы"} color="white" spanColor="#ffffff27" />
+				{/* <h3 className={scss.heading}></h3> */}
 				<div className={scss.slider}>
 					<Slider {...settings}>
 						{items.map((item, index) => (
-							<div className={scss.slider__image}>
+							<div className={scss.slider__image} key={index}>
 								<img src={item.imageUrl} alt={`Slide ${item.imageUrl}`} />
 							</div>
 						))}

@@ -127,6 +127,11 @@
 		font-size: 27px;
 		line-height: 1.2;
 		color: $grey;
+		transition: 0.3s;
+		&:hover {
+			color: $dark;
+			transform: scale(1.02);
+		}
 		@media (max-width: $xl) {
 			font-size: 24px;
 		}

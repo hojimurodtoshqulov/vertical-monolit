@@ -12,7 +12,14 @@ import Quality from "../../components/quality";
 const Home = () => {
 	return (
 		<div>
-			<Header head1={"Модернизация технологической"} head2={""} />
+			<Header
+				head1={"Модернизация технологической"}
+				head2={""}
+				paragraph="линии наружного покрытия трубопроводов"
+				titleSize="70"
+				textSize="60"
+				textWidth="70"
+			/>
 			<Categories />
 			<div style={{ margin: "200px 0" }}>
 				<HomeAbout />

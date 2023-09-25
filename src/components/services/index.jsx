@@ -12,7 +12,7 @@ const Services = () => {
 		<>
 			<div className="container">
 				<div className={scss.services__head}>
-					<Title titleName={"Наши услуги"} />
+					<Title titleName={"Наши услуги"}  />
 					<img src="" alt="" />
 				</div>
 				<div className={scss.services}>
