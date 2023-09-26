@@ -4,21 +4,21 @@
 	width: 100%;
 	margin: 100px 0 0 0;
 	background-image: url("../../assets/perfectback.png");
+	background-size: cover;
 	.perfect {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem 0;
 		&__left {
-			width: 40%;
+			width: 44%;
 			color: white;
-			h3 {
-				font-size: 1.8rem;
-				line-height: 1.8rem;
-				margin: 1rem 0;
+			h2 {
+				width: 100%;
+				margin: 0 0 1rem 0;
 			}
 			p {
-				font-size: 16px;
+				font-size: 18px;
 				line-height: 24px;
 			}
 		}
@@ -37,13 +37,8 @@
 		.perfect {
 			&__left {
 				width: 50%;
-				h3 {
-					font-size: 1.6rem;
-					line-height: 1.4rem;
-					margin: 1rem 0;
-				}
 				p {
-					font-size: 16px;
+					font-size: 17px;
 					line-height: 22px;
 				}
 			}
@@ -62,13 +57,8 @@
 	.perfectWrapper {
 		.perfect {
 			&__left {
-				h3 {
-					font-size: 1.6rem;
-					line-height: 0rem;
-					margin: 1rem 0;
-				}
 				p {
-					font-size: 15px;
+					font-size: 16px;
 					line-height: 22px;
 				}
 			}
@@ -86,12 +76,6 @@
 			row-gap: 2rem;
 			&__left {
 				width: 80%;
-				h3 {
-					font-size: 1.6rem;
-					line-height: 1.6rem;
-					margin: 1rem 0;
-					text-align: center;
-				}
 				p {
 					text-align: justify;
 					font-size: 16px;
@@ -110,15 +94,9 @@
 		.perfect {
 			&__left {
 				width: 95%;
-				h3 {
-					font-size: 1.2rem;
-					line-height: 1.2rem;
-					margin: 0.8rem 0;
-					text-align: center;
-				}
 				p {
 					text-align: justify;
-					font-size: 14px;
+					font-size: 15px;
 					line-height: 21px;
 				}
 			}

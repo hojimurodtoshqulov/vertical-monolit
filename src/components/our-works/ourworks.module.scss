@@ -68,4 +68,46 @@
 			}
 		}
 	}
+	.arrow {
+		position: absolute;
+		cursor: pointer;
+		z-index: 12;
+		width: 10%;
+		text-align: center;
+		transition: 0.1ms;
+		color: $light;
+		border: 1px solid $light;
+		border-radius: 5px;
+		width: 40px;
+		height: 40px;
+		transform: rotate(45deg);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:hover {
+			color: $light;
+			background: $primary;
+			transition: 0.1ms;
+			border: 1px solid $primary;
+		}
+		@media (max-width: $md) {
+			display: none;
+		}
+	}
+	.next {
+		right: 3%;
+		top: 48%;
+		bottom: auto;
+		svg {
+			transform: rotate(-45deg);
+		}
+	}
+	.prev {
+		left: 3%;
+		top: 48%;
+		bottom: auto;
+		svg {
+			transform: rotate(-45deg);
+		}
+	}
 }

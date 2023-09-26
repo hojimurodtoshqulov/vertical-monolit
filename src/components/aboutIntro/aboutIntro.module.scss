@@ -70,24 +70,9 @@
 		@media (max-width: $sm) {
 			text-align: center;
 		}
-		.heading {
-			font-size: 40px;
-			color: $primary;
+		h2 {
 			margin-bottom: 20px;
-			line-height: 1;
-			font-weight: normal;
-			@media (min-width: $xxl) {
-				font-size: 65px;
-			}
-			@media (max-width: $xl) {
-				font-size: 38px;
-			}
-			@media (max-width: $lg) {
-				font-size: 34px;
-			}
-			@media (max-width: $md) {
-				font-size: 30px;
-			}
+			width: 100%;
 		}
 		.text {
 			font-weight: 400;

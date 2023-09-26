@@ -7,7 +7,7 @@ import img1 from "../../assets/show7.png";
 import img2 from "../../assets/show2.jpg";
 import img3 from "../../assets/show3.jpg";
 import Title from "../title";
-
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 const items = [
 	{
 		imageUrl: img1,
@@ -21,12 +21,27 @@ const items = [
 ];
 
 const OurWorks = () => {
+	const NextArrow = ({ onClick }) => (
+		<div className={`${scss.arrow} ${scss.next}`} onClick={onClick}>
+			<FaArrowRight />
+		</div>
+	);
+	const PrevArrow = ({ onClick }) => (
+		<div className={`${scss.arrow} ${scss.prev}`} onClick={onClick}>
+			<FaArrowLeft />
+		</div>
+	);
+	// const [imageIndex, setImageIndex] = useState(0);
 	const settings = {
 		dots: true,
 		infinite: true,
 		speed: 1000,
 		slidesToShow: 1,
 		slidesToScroll: 1,
+		autoplay: true,
+		nextArrow: <NextArrow />,
+		prevArrow: <PrevArrow />,
+		// beforeChange: (current, next) => setImageIndex(next),
 	};
 
 	return (

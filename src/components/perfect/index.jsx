@@ -4,6 +4,7 @@ import scss from "./perfect.module.scss";
 import Img from "../../assets/perfect.png";
 // image
 import { Tilt } from "react-tilt";
+import Title from "../title";
 
 const defaultOptions = {
 	reverse: false, // reverse the tilt direction
@@ -23,7 +24,11 @@ const Perfect = () => {
 				<div className="container">
 					<div className={scss.perfect}>
 						<div className={scss.perfect__left}>
-							<h3>We love to make perfect home</h3>
+							<Title
+								titleName={"We love to make perfect home"}
+								color="white"
+								spanColor="#ffffff27"
+							/>
 							<p>
 								The staff of the company "Bekzod holding" is equipped with
 								specialists with relevant specialized education and extensive
@@ -34,9 +39,7 @@ const Perfect = () => {
 							</p>
 						</div>
 						<div className={scss.perfect__right}>
-							<Tilt
-								options={defaultOptions}
-							>
+							<Tilt options={defaultOptions}>
 								<img src={Img} alt="Vertical-monolit" />
 							</Tilt>
 						</div>
