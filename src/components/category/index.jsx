@@ -4,18 +4,18 @@ import Icon from "../../assets/category-icon.png";
 const categories = [
 	{
 		icon: Icon,
-		heading: "Lorem ipsum dolor",
-		text: "Lorem ipsum dolor sit amet consectetur. Magnis dictumst dictum eget vestibulum",
+		heading: "Проектирование под ключ",
+		text: "Мы предоставляем комплекс услуг, благодаря которым проект будет завершен в краткие сроки.",
 	},
 	{
 		icon: Icon,
-		heading: "Lorem ipsum dolor",
-		text: "Lorem ipsum dolor sit amet consectetur. Magnis dictumst dictum eget vestibulum",
+		heading: "Качественный сервис",
+		text: "Благодаря количеству наших отделов, ваш проект будет выполнен качественно и в сроки",
 	},
 	{
 		icon: Icon,
-		heading: "Lorem ipsum dolor",
-		text: "Lorem ipsum dolor sit amet consectetur. Magnis dictumst dictum eget vestibulum",
+		heading: "Гарантия",
+		text: "Многолетний опыт наших специалистов гарантирует своевременную сдачу проекта, не забывая о качестве выполнения",
 	},
 ];
 

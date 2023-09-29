@@ -9,7 +9,7 @@ const AboutUs = () => {
 			<Showcase
 				head1={"о нас"}
 				paragraph={
-					'The company LLC "Bekzod holding", established in June 2012, specializes in the development of complex web projects and information systems, directly for government agencies, taking into account the requirements.'
+					"Мы предоставляем широкий спектр услуг, включая строительство и реконструкцию как подземных, так и надземных стальных труб, а также ремонт фасадов зданий и теплоизоляцию труб в труднодоступных местах. Мы используем строительные материалы только от проверенных производителей с сертификатами качества."
 				}
 			/>
 			<AboutIntro />

@@ -30,13 +30,13 @@
 		gap: 20px;
 		.leftside {
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 			justify-content: center;
 			gap: 49px;
 			flex-wrap: wrap;
 			h2 {
 				width: 30%;
-				margin: 0;
+				margin: 20px 0 0 0;
 				@media (max-width: $md) {
 					width: 50%;
 					margin: 20px 0 0 0;
@@ -44,34 +44,40 @@
 			}
 			.card {
 				width: 30%;
+
 				.border {
 					min-height: 220px;
+					height: 250px;
 					border: 6px solid #ffffff;
 					border-radius: 30px;
 					.legend {
 						img {
-							margin: 0 22px;
+							margin: 0px 22px 10px;
 						}
 					}
 					.h2 {
 						margin: 0;
 						color: #fff;
 						font-family: sans-serif;
-						font-size: 25px;
+						font-size: 27px;
 						font-style: normal;
 						font-weight: 700;
 						line-height: 27px;
 						padding-left: 11px;
+						width: 100%;
 					}
 					.p {
 						margin: 0;
 						color: #ffffffae;
 						font-family: sans-serif;
-						font-size: 15px;
+						font-size: 18px;
 						font-style: normal;
 						font-weight: 300;
-						line-height: 27px;
+						line-height: 22px;
 						padding: 11px;
+						@media (min-width: $xxl) {
+							font-size: 20px;
+						}
 					}
 				}
 			}

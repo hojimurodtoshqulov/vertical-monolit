@@ -28,21 +28,27 @@ export default function Workscard() {
 						>
 							<h2 className={style.h2}>2. Lorem ipsum</h2>
 						</Tilt>
-						<Tilt options={defaultOptions} className={style.card}>
+						<Tilt
+							options={defaultOptions}
+							className={`${style.card} ${style.card3}`}
+						>
 							<h2 className={style.h2}>3. Lorem ipsum</h2>
 						</Tilt>
 						<Tilt
 							options={defaultOptions}
-							className={`${style.card} ${style.card22}`}
+							className={`${style.card} ${style.card4}`}
 						>
 							<h2 className={style.h2}>4. Lorem ipsum</h2>
 						</Tilt>
-						<Tilt options={defaultOptions} className={style.card}>
+						<Tilt
+							options={defaultOptions}
+							className={`${style.card} ${style.card5}`}
+						>
 							<h2 className={style.h2}>5. Lorem ipsum</h2>
 						</Tilt>
 						<Tilt
 							options={defaultOptions}
-							className={`${style.card} ${style.card22}`}
+							className={`${style.card} ${style.card6}`}
 						>
 							<h2 className={style.h2}>6. Lorem ipsum</h2>
 						</Tilt>

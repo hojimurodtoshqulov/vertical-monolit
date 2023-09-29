@@ -44,6 +44,42 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+    .card3{
+      background: linear-gradient(
+          180deg,
+          rgba(5, 121, 121, 0) 57.8%,
+          rgba(6, 101, 101, 0.5) 77.86%
+        ),
+        url(/public/workcard3.png), lightgray 40% / cover no-repeat;
+      background-size: cover;
+    }
+    .card4{
+      background: linear-gradient(
+          180deg,
+          rgba(5, 121, 121, 0) 57.8%,
+          rgba(6, 101, 101, 0.5) 77.86%
+        ),
+        url(/public/workcard4.png), lightgray 40% / cover no-repeat;
+      background-size: cover;
+    }
+    .card5{
+      background: linear-gradient(
+          180deg,
+          rgba(5, 121, 121, 0) 57.8%,
+          rgba(6, 101, 101, 0.5) 77.86%
+        ),
+        url(/public/workcard5.png), lightgray 40% / cover no-repeat;
+      background-size: cover;
+    }
+    .card6{
+      background: linear-gradient(
+          180deg,
+          rgba(5, 121, 121, 0) 57.8%,
+          rgba(6, 101, 101, 0.5) 77.86%
+        ),
+        url(/public/workcard6.png), lightgray 40% / cover no-repeat;
+      background-size: cover;
+    }
   }
 }
 

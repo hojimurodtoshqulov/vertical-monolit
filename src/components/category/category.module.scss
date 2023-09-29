@@ -14,7 +14,7 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	gap: 25px;
 	margin-top: -110px;
 	position: relative;

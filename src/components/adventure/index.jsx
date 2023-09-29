@@ -15,7 +15,11 @@ export default function Adventure() {
 					<div className={add.addbox}>
 						<div className={add.leftside}>
 							{/* <h2 className={add.h22}></h2> */}
-							<Title titleName={"Наша преимущества"} color="white" spanColor="#ffffff27" />
+							<Title
+								titleName={"Наша преимущества"}
+								color="white"
+								spanColor="#ffffff27"
+							/>
 							<div className={add.card}>
 								<fieldset className={add.border}>
 									<legend className={add.legend}>
@@ -57,10 +61,11 @@ export default function Adventure() {
 									<legend className={add.legend}>
 										<img src="/add4.png" />
 									</legend>
-									<h2 className={add.h2}>Lorem ispum</h2>
+									<h2 className={add.h2}> Опыт с гос.заказами</h2>
 									<p className={add.p}>
-										Lorem ipsum dolor sit amet consectetur. Magnis dictumst
-										dictum eget vestibulum interdum enim vitae. Lorem ipsum
+										Все наши проекты были связаны с стратегически важными
+										объектами, таких как снабжение теплом населения города
+										Ташкент и социально важные объекты
 									</p>
 								</fieldset>
 							</div>
@@ -69,10 +74,11 @@ export default function Adventure() {
 									<legend className={add.legend}>
 										<img src="/add5.png" />
 									</legend>
-									<h2 className={add.h2}>Lorem ispum</h2>
+									<h2 className={add.h2}> Материалы по стандарту</h2>
 									<p className={add.p}>
-										Lorem ipsum dolor sit amet consectetur. Magnis dictumst
-										dictum eget vestibulum interdum enim vitae. Lorem ipsum
+										Использование строительных материалов, только известных и
+										проверенных годами производителей с наличием сертификатов
+										качества.
 									</p>
 								</fieldset>
 							</div>

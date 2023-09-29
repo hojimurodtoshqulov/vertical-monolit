@@ -25,17 +25,16 @@ const Perfect = () => {
 					<div className={scss.perfect}>
 						<div className={scss.perfect__left}>
 							<Title
-								titleName={"We love to make perfect home"}
+								titleName={"Все наши проекты связаны со с тратегич ски важными объектами"}
 								color="white"
 								spanColor="#ffffff27"
 							/>
 							<p>
-								The staff of the company "Bekzod holding" is equipped with
-								specialists with relevant specialized education and extensive
-								experience in the development of complex web projects and
-								information systems. All the company's developers have completed
-								the necessary training and received certificates confirming
-								their competence and the level of qualification achieved.
+								Tакими как снабжение теплом населения города Ташкент, а также
+								социально значимыми объектами, например, школами, садами и
+								государственными предприятиями. Мы гарантируем высокое качество
+								и надежность наших работ, благодаря использованию проверенных
+								технологий и опыту наших специалистов.
 							</p>
 						</div>
 						<div className={scss.perfect__right}>
