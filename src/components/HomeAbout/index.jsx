@@ -23,7 +23,6 @@ const HomeAbout = () => {
 				<div className={scss.section__left}>
 					<div className={scss.img}>
 						<Tilt options={defaultOptions}>
-							{/* <div>👽</div> */}
 							<img src={img1} alt="img1" />
 						</Tilt>
 					</div>

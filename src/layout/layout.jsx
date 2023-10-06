@@ -6,7 +6,7 @@ import Footer from "../components/footer";
 import FormMap from "../components/form_map";
 import video from "../assets/VM_animation.mp4";
 // import i18next from "i18next";
-// import MobileNav from "../components/mobileNav";
+import MobileNav from "../components/mobileNav";
 
 const Layout = ({ children }) => {
 	// const handleClick = (e) => {

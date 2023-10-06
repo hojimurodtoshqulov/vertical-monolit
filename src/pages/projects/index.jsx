@@ -4,7 +4,7 @@ import Workscard from "../../components/workscard";
 const Projects = () => {
   return (
     <>
-      <Showcase head1={"наши проеткы".toUpperCase()} />
+      <Showcase head1={"наши проекты".toUpperCase()} />
       <Workscard />
     </>
   );

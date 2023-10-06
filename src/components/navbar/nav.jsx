@@ -7,7 +7,8 @@ import { useTranslation } from "react-i18next";
 // import { HiLanguage } from "react-icons/hi2";
 import { FaPhone } from "react-icons/fa";
 import "./dropdown.scss";
-const langs = [ "ru", "uz"];
+import MobileNav from "../mobileNav";
+const langs = ["ru", "uz"];
 const Nav = () => {
 	const [navColorBg, setnavColorBg] = useState(0);
 	const [navSize, setnavSize] = useState("12vh");
@@ -75,7 +76,7 @@ const Nav = () => {
 					boxShadow: navBoxShadow,
 				}}
 			>
-				<div className="container" data-aos="fade-left">
+				<div className="container">
 					<div className={scss.nav__container}>
 						<Link
 							style={{ color: navLinkColor }}
@@ -140,6 +141,7 @@ const Nav = () => {
 							<a href="tel:+998777777777">+998 77 777 77 77</a>
 							<a href="tel:+998777777777">{<FaPhone />}</a>
 						</div>
+						<MobileNav />
 					</div>
 				</div>
 			</nav>

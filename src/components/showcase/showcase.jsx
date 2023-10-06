@@ -127,15 +127,6 @@ const Header = ({
 							className={scss.header__container_elements_button}
 							onClick={scrollToTop}
 						></div>
-						{/* <img
-              className={scss.header__container_elements_whiteLogo}
-              src={img5}
-              alt={img5}
-              data-aos="fade-up"
-            />
-            <div className={scss.header__container_elements_whiteLogo2}>
-              <img src={img5} alt={img5} data-aos="fade-up" />
-            </div> */}
 					</div>
 				</div>
 				<div className={scss.bgDiv}></div>

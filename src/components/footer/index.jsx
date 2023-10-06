@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
+	const scrollToTop = () => {
+		window.scrollTo(0, 0);
+	};
 	return (
 		<div className="container">
 			<div className={scss.footer__wrapper}>
@@ -33,16 +36,18 @@ const Footer = () => {
 					{/* <h4>About</h4> */}
 					<div className={scss.links}>
 						<p>
-							<Link to="/about">О нас</Link>
+							<Link to="/about" onClick={scrollToTop}>
+								О нас
+							</Link>
 						</p>
 						<p>
-							<Link to="/projects">Проекты</Link>
+							<Link to="/projects" onClick={scrollToTop}>Проекты</Link>
 						</p>
 						<p>
-							<Link to="/news">Новости</Link>
+							<Link to="/news" onClick={scrollToTop}>Новости</Link>
 						</p>
 						<p>
-							<Link to="/contact">Конакты</Link>
+							<Link to="/contact" onClick={scrollToTop}>Конакты</Link>
 						</p>
 					</div>
 				</div>

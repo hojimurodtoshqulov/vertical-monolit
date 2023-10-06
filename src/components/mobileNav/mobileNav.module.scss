@@ -1,0 +1,132 @@
+@import "../../styles/variables.scss";
+.mobileNavWrap {
+	transition: 1s;
+	position: relative;
+	right: 0%;
+	top: 0%;
+	bottom: auto;
+	left: auto;
+	width: 25px;
+	height: 90%;
+	.bars {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+		transition: 0.5s;
+		span {
+			transition: 0.8s;
+			width: 90%;
+			height: 2px;
+			border-top: 3px solid $light;
+		}
+	}
+	.links {
+		opacity: 0;
+		position: absolute;
+		top: -10vh;
+		right: -100%;
+		bottom: auto;
+		left: auto;
+		// transition: 0.5s;
+		a {
+			margin-bottom: 20px;
+			font-size: 30px;
+			position: relative;
+			z-index: -123;
+		}
+	}
+}
+.active {
+	transition: 1s;
+	position: relative;
+	right: 0%;
+	top: 0%;
+	bottom: auto;
+	left: auto;
+	width: 25px;
+	height: 90%;
+	// border: 1px solid red;
+	.bars {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+		position: relative;
+		z-index: 124;
+		cursor: pointer;
+		span {
+			transition: 0.8s;
+			cursor: pointer;
+			width: 90%;
+			height: 2px;
+			border-top: 3px solid $light;
+			position: absolute;
+			&:nth-child(1) {
+				top: -1px;
+				border-color: $light;
+				transform: rotate(45deg);
+			}
+			&:nth-child(2) {
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				border-color: $light;
+				transform: rotate(-45deg);
+				bottom: -1px;
+			}
+		}
+	}
+	.links {
+		width: 80%;
+		height: 120vh;
+		opacity: 1;
+		position: fixed;
+		top: -10vh;
+		right: 0;
+		z-index: 123;
+		bottom: auto;
+		left: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background: transparent;
+		box-shadow: inset 0px 0px 100px #009d9d;
+		backdrop-filter: blur(10px);
+		transition: 0.5s;
+		a {
+			margin-bottom: 20px;
+			font-size: 30px;
+			position: relative;
+			z-index: 123;
+			&:nth-child(1) {
+				position: absolute;
+				top: 20%;
+				left: 30%;
+				width: 40%;
+				img {
+					width: 100%;
+				}
+			}
+			&:last-child {
+				position: absolute;
+				bottom: 20%;
+				left: 20%;
+				width: 80%;
+				font-size: 22px;
+			}
+		}
+	}
+	.navBG {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100vh;
+		background: #000000cf;
+	}
+}
