@@ -35,6 +35,12 @@
 		&_phoneLink {
 			// backdrop-filter: drop-shadow(0 0 5px #000);
 			// text-shadow: 0 0 5px #000;
+			a:first-child {
+				display: block;
+			}
+			a:last-child {
+				display: none;
+			}
 			@media (max-width: $xl) {
 				display: none;
 			}

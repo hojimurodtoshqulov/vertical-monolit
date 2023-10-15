@@ -1,5 +1,6 @@
 @import "../../styles/variables.scss";
 .mobileNavWrap {
+	display: none;
 	transition: 1s;
 	position: relative;
 	right: 0%;
@@ -8,6 +9,9 @@
 	left: auto;
 	width: 25px;
 	height: 90%;
+	@media (max-width: $md) {
+		display: block;
+	}
 	.bars {
 		display: flex;
 		flex-direction: column;
@@ -29,7 +33,6 @@
 		right: -100%;
 		bottom: auto;
 		left: auto;
-		// transition: 0.5s;
 		a {
 			margin-bottom: 20px;
 			font-size: 30px;
