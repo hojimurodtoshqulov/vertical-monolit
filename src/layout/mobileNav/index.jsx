@@ -39,12 +39,10 @@ const MobileNav = () => {
 					>
 						{t("Проекты")}
 					</NavLink>{" "}
-					<NavLink to="/news" onClick={scrollToTop}>
-						{t("Новости")}
-					</NavLink>{" "}
 					<NavLink to="/contact" onClick={scrollToTop}>
 						{t("Контакты")}
 					</NavLink>
+					<p>линии наружного покрытия трубопроводов</p>
 					<a href="tel:+998777777777">+998 77 777 77 77</a>
 				</div>
 				<div className={scss.navBG}></div>

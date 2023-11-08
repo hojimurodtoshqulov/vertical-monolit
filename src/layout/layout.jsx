@@ -1,12 +1,12 @@
 import { Suspense } from "react";
-import { Nav } from "../components/navbar/nav";
+import { Nav } from "./navbar/nav";
 import { useEffect, useState } from "react";
 import Aos from "aos";
-import Footer from "../components/footer";
+import Footer from "./footer";
 import FormMap from "../components/form_map";
 import video from "../assets/VM_animation.mp4";
 // import i18next from "i18next";
-import MobileNav from "../components/mobileNav";
+import MobileNav from "./mobileNav";
 
 const Layout = ({ children }) => {
 	// const handleClick = (e) => {

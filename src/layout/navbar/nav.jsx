@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 // import { HiLanguage } from "react-icons/hi2";
 import { FaPhone } from "react-icons/fa";
 import "./dropdown.scss";
-import MobileNav from "../mobileNav";
+import MobileNav from "../../layout/mobileNav";
 const langs = ["ru", "uz"];
 const Nav = () => {
 	const [navColorBg, setnavColorBg] = useState(0);
@@ -106,13 +106,6 @@ const Nav = () => {
 							</Link>{" "}
 							<NavLink
 								style={{ color: navLinkColor }}
-								to="/news"
-								onClick={scrollToTop}
-							>
-								{t("Новости")} <span></span>
-							</NavLink>{" "}
-							<NavLink
-								style={{ color: navLinkColor }}
 								to="/contact"
 								onClick={scrollToTop}
 							>
@@ -138,8 +131,8 @@ const Nav = () => {
 							</div>
 						</div>
 						<div className={scss.nav__container_phoneLink}>
-							<a href="tel:+998777777777">+998 77 777 77 77</a>
-							<a href="tel:+998777777777">{<FaPhone />}</a>
+							<a href="tel:+998901863333">+998 90 186 33 33</a>
+							<a href="tel:+998901863333">{<FaPhone />}</a>
 						</div>
 						<MobileNav />
 					</div>

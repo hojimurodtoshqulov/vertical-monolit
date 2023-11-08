@@ -2,12 +2,18 @@
 
 .workscard {
 	padding: 130px 0;
+	@media (max-width: $md) {
+		padding: 100px 0;
+	}
 	.cards {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
 		gap: 70px;
+		@media (max-width: $md) {
+			padding: 0;
+		}
 		.card {
 			border-radius: 25px;
 			background: linear-gradient(
@@ -21,6 +27,11 @@
 			height: 400px;
 			width: 43%;
 			position: relative;
+			@media (max-width: $md) {
+				width: 100%;
+				transform: scaleX(1.05);
+				height: 350px;
+			}
 			.h2 {
 				position: absolute;
 				bottom: 30px;

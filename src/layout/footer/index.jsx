@@ -55,8 +55,7 @@ const Footer = () => {
 					<h4>Наше местоположение</h4>
 					<div className={scss.address}>
 						<p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-
-						<a href="tel:+998935952204">+998 93 595 22 04</a>
+						<a href="tel:+998901863333">+998 90 186 33 33</a>
 					</div>
 				</div>
 			</div>
