@@ -5,9 +5,7 @@ import img1 from "../../assets/show1.png";
 import img2 from "../../assets/show6.jpg";
 import img3 from "../../assets/show5.jpg";
 import img4 from "../../assets/show4.webp";
-// import img5 from "../../assets/logo_head.png";
-// import Button from "../button/button";
-/* Translation */
+
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 

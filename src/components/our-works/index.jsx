@@ -8,19 +8,20 @@ import img2 from "../../assets/show2.jpg";
 import img3 from "../../assets/show3.jpg";
 import Title from "../title";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-const items = [
-	{
-		imageUrl: img1,
-	},
-	{
-		imageUrl: img2,
-	},
-	{
-		imageUrl: img3,
-	},
-];
-
+import { useTranslation } from "react-i18next";
 const OurWorks = () => {
+	const { t } = useTranslation();
+	const items = [
+		{
+			imageUrl: img1,
+		},
+		{
+			imageUrl: img2,
+		},
+		{
+			imageUrl: img3,
+		},
+	];
 	const NextArrow = ({ onClick }) => (
 		<div className={`${scss.arrow} ${scss.next}`} onClick={onClick}>
 			<FaArrowRight />
@@ -49,7 +50,7 @@ const OurWorks = () => {
 			<img src="/vlogo.png" alt="/vlogo.png" className={scss.vector} />
 			<img src="/vlogo2.png" alt="/vlogo2.png" className={scss.vector2} />
 			<div className={scss.container}>
-				<Title titleName={"Наши работы"} color="white" spanColor="#ffffff27" />
+				<Title titleName={t("home.works.title")} color="white" spanColor="#ffffff27" />
 				{/* <h3 className={scss.heading}></h3> */}
 				<div className={scss.slider}>
 					<Slider {...settings}>

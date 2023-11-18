@@ -8,16 +8,17 @@ import OurWorks from "../../components/our-works";
 import Services from "../../components/services";
 import Quality from "../../components/quality";
 // import Perfect from "../../components/perfect";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+	const { t } = useTranslation();
 	return (
 		<div>
 			<Header
-				head1={"Модернизация технологической"}
-				head2={""}
-				paragraph="линии наружного покрытия трубопроводов"
+				head1={t("home.showcase.title")}
+				paragraph={t("home.showcase.text")}
 				titleSize="70"
-				textSize="60"
+				textSize="50"
 				textWidth="70"
 			/>
 			<Categories />

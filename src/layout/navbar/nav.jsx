@@ -22,7 +22,7 @@ const Nav = () => {
 	const listenScrollEvent = () => {
 		window.scrollY > 80 ? setnavColorBg(10) : setnavColorBg(0);
 		window.scrollY > 80 ? setnavSize("10vh") : setnavSize("12vh");
-		window.scrollY > 80 ? setNavLinkColor("#fff") : setNavLinkColor("");
+		// window.scrollY > 80 ? setNavLinkColor("#fff") : setNavLinkColor("");
 		window.scrollY > 80 ? setnavSizeMobile("9.4vh") : setnavSizeMobile("9.4vh");
 		window.scrollY > 80 ? setNavBg("#009d9d1d") : setNavBg("transparent");
 		window.scrollY > 80
@@ -47,7 +47,7 @@ const Nav = () => {
 	};
 	useEffect(() => {
 		if (!localStorage.getItem("lang")) {
-			localStorage.setItem("lang", "en");
+			localStorage.setItem("lang", "ru");
 		} else {
 			setCurrentLang(localStorage.getItem("lang"));
 			i18n.changeLanguage(localStorage.getItem("lang"));
@@ -79,7 +79,7 @@ const Nav = () => {
 				<div className="container">
 					<div className={scss.nav__container}>
 						<Link
-							style={{ color: navLinkColor }}
+							
 							onClick={scrollToTop}
 							className={scss.nav__container_logo}
 							to="/"
@@ -88,28 +88,35 @@ const Nav = () => {
 						</Link>
 						<div className={scss.nav__container_links}>
 							<NavLink
-								style={{ color: navLinkColor }}
+								
+								to="/"
+								onClick={scrollToTop}
+							>
+								{t("nav.home")} <span></span>
+							</NavLink>
+							<NavLink
+								
 								to="/about"
 								onClick={scrollToTop}
 							>
-								{t("О нас")} <span></span>
-							</NavLink>{" "}
-							<Link
-								style={{ color: navLinkColor }}
+								{t("nav.about")} <span></span>
+							</NavLink>
+							<NavLink
+								
 								onClick={scrollToTop}
 								className={scss.dropdown}
 								to={"projects"}
 							>
-								{t("Проекты")}
+								{t("nav.projects")}
 
 								<span></span>
-							</Link>{" "}
+							</NavLink>
 							<NavLink
-								style={{ color: navLinkColor }}
+								
 								to="/contact"
 								onClick={scrollToTop}
 							>
-								{t("Контакты")} <span></span>
+								{t("nav.contact")} <span></span>
 							</NavLink>
 						</div>
 						<div className={scss.nav__container_lang}>

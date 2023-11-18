@@ -1,7 +1,35 @@
 import Title from "../title";
 import add from "./add.module.scss";
-
+import { useTranslation } from "react-i18next";
 export default function Adventure() {
+	const { t } = useTranslation();
+	const data = [
+		{
+			img: "/add1.png",
+			title: t("home.advantages.title1"),
+			text: t("home.advantages.text1"),
+		},
+		{
+			img: "/add2.png",
+			title: t("home.advantages.title2"),
+			text: t("home.advantages.text2"),
+		},
+		{
+			img: "/add3.png",
+			title: t("home.advantages.title3"),
+			text: t("home.advantages.text3"),
+		},
+		{
+			img: "/add4.png",
+			title: t("home.advantages.title4"),
+			text: t("home.advantages.text4"),
+		},
+		{
+			img: "/add5.png",
+			title: t("home.advantages.title5"),
+			text: t("home.advantages.text5"),
+		},
+	];
 	return (
 		<>
 			<div className={add.adventure}>
@@ -16,11 +44,24 @@ export default function Adventure() {
 						<div className={add.leftside}>
 							{/* <h2 className={add.h22}></h2> */}
 							<Title
-								titleName={"Наша преимущества"}
+								titleName={ t("home.advantages.title")}
 								color="white"
 								spanColor="#ffffff27"
 							/>
-							<div className={add.card}>
+							{data?.map((item, index) => (
+								<>
+									<div className={add.card} key={index}>
+										<fieldset className={add.border}>
+											<legend className={add.legend}>
+												<img src={item.img} />
+											</legend>
+											<h2 className={add.h2}>{item.title}</h2>
+											<p className={add.p}>{item.text}</p>
+										</fieldset>
+									</div>
+								</>
+							))}
+							{/* <div className={add.card}>
 								<fieldset className={add.border}>
 									<legend className={add.legend}>
 										<img src="/add1.png" />
@@ -81,7 +122,7 @@ export default function Adventure() {
 										качества.
 									</p>
 								</fieldset>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>

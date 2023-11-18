@@ -4,7 +4,9 @@ import img2 from "../../assets/home-about-2.png";
 import img3 from "../../assets/home-about-3.png";
 import Title from "../title";
 import { Tilt } from "react-tilt";
+import { useTranslation } from "react-i18next";
 const HomeAbout = () => {
+	const { t } = useTranslation();
 	const defaultOptions = {
 		reverse: false, // reverse the tilt direction
 		max: 35, // max tilt rotation (degrees)
@@ -38,15 +40,9 @@ const HomeAbout = () => {
 					</div>
 				</div>
 				<div className={scss.section__right}>
-					<Title titleName={"О нас"} />
-					<p>
-						"Vertical Monolit" - это группа опытных строительных экспертов,
-						которые успешно справляются с самыми сложными задачами.
-					</p>
-					<p>
-						Команда состоит из профессионалов с опытом работы более 20 лет, а
-						также молодых и перспективных инженеров с опытом не менее 10 лет.
-					</p>
+					<Title titleName={t("home.about.title")} />
+					<p>{t("home.about.text1")}</p>
+					<p>{t("home.about.text2")}</p>
 				</div>
 			</div>
 			{/* </div>   */}

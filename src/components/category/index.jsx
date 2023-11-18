@@ -1,25 +1,28 @@
 import scss from "./category.module.scss";
 import Icon from "../../assets/category-icon.png";
-
-const categories = [
-	{
-		icon: Icon,
-		heading: "Проектирование под ключ",
-		text: "Мы предоставляем комплекс услуг, благодаря которым проект будет завершен в краткие сроки.",
-	},
-	{
-		icon: Icon,
-		heading: "Качественный сервис",
-		text: "Благодаря количеству наших отделов, ваш проект будет выполнен качественно и в сроки",
-	},
-	{
-		icon: Icon,
-		heading: "Гарантия",
-		text: "Многолетний опыт наших специалистов гарантирует своевременную сдачу проекта, не забывая о качестве выполнения",
-	},
-];
+import { MdOutlineMiscellaneousServices } from "react-icons/md";
+import { GiTeePipe, GiWarpPipe } from "react-icons/gi";
+import { useTranslation } from "react-i18next";
 
 const Categories = () => {
+	const { t } = useTranslation();
+	const categories = [
+		{
+			icon: <MdOutlineMiscellaneousServices />,
+			heading: t("home.categ.title1"),
+			text: t("home.categ.text1"),
+		},
+		{
+			icon: <GiTeePipe />,
+			heading: t("home.categ.title2"),
+			text: t("home.categ.text2"),
+		},
+		{
+			icon: <GiWarpPipe />,
+			heading: t("home.categ.title3"),
+			text: t("home.categ.text3"),
+		},
+	];
 	return (
 		<>
 			<div className="container">
@@ -40,7 +43,8 @@ const CategoryItem = ({ icon, heading, text }) => {
 		<>
 			<div className={scss.category__item}>
 				<div className={scss.category__item__icon}>
-					<img src="/add2.png" alt={heading} />
+					{/* <img src="/add2.png" alt={heading} /> */}
+					{icon}
 				</div>
 				<h4>{heading}</h4>
 				<p>{text}</p>

@@ -29,18 +29,21 @@ const MobileNav = () => {
 					<Link to="/" onClick={scrollToTop}>
 						<img src={navLogo} alt={navLogo} />
 					</Link>
+					<NavLink to="/" onClick={scrollToTop}>
+						{t("nav.home")}
+					</NavLink>
 					<NavLink to="/about" onClick={scrollToTop}>
-						{t("О нас")}
-					</NavLink>{" "}
+						{t("nav.about")}
+					</NavLink>
 					<NavLink
 						onClick={scrollToTop}
 						className={scss.dropdown}
 						to={"projects"}
 					>
-						{t("Проекты")}
-					</NavLink>{" "}
+						{t("nav.projects")}
+					</NavLink>
 					<NavLink to="/contact" onClick={scrollToTop}>
-						{t("Контакты")}
+						{t("nav.contact")}
 					</NavLink>
 					<p>линии наружного покрытия трубопроводов</p>
 					<a href="tel:+998777777777">+998 77 777 77 77</a>

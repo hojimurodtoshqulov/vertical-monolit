@@ -3,8 +3,9 @@ import img2 from "../../assets/home-about-1.png";
 import img1 from "../../assets/home-about-2.png";
 import Title from "../title";
 import { Tilt } from "react-tilt";
-
+import { useTranslation } from "react-i18next";
 const AboutIntro = () => {
+	const { t } = useTranslation();
 	const defaultOptions = {
 		reverse: false, // reverse the tilt direction
 		max: 35, // max tilt rotation (degrees)
@@ -35,18 +36,9 @@ const AboutIntro = () => {
 				</div>
 				<div className={scss.wrapper__right}>
 					{/* <h3 className={scss.heading}></h3> */}
-					<Title titleName={"Мы предоставляем широкий спектр услуг"} />
-					<p className={scss.text}>
-						Включая строительство и реконструкцию как подземных, так и надземных
-						стальных труб, а также ремонт фасадов зданий и теплоизоляцию труб в
-						труднодоступных местах. Мы используем строительные материалы только
-						от проверенных производителей с сертификатами качества.
-					</p>
-					<p className={scss.text}>
-						Мы осуществляем комплексный подход к выполнению проектов, включающий
-						благоустройство объекта, раскопку с учетом городских коммуникаций и
-						обратную засыпку с уплотнением грунта.
-					</p>
+					<Title titleName={t("about.aboutIntro.title")} />
+					<p className={scss.text}>{t("about.aboutIntro.text1")}</p>
+					<p className={scss.text}>{t("about.aboutIntro.text2")}</p>
 				</div>
 			</div>
 		</div>

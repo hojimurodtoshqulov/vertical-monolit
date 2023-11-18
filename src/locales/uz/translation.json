@@ -1,1 +1,99 @@
-{}
+{
+	"nav": {
+		"home": "Asosiy",
+		"about": "Biz haqimizda",
+		"projects": "Proektlar",
+		"products": "Mahsulotlar",
+		"contact": "Aloqa"
+	},
+	"footer": {
+		"links": "Asosiy havolalar",
+		"addressTitle": "Bizning joylashuvimiz",
+		"address": "O'zbekiston, Toshkent sh, Kichik halqa, 15"
+	},
+	"home": {
+		"showcase": {
+			"title": "Texnologik modernizatsiya",
+			"text": "quvur liniyasi va tashqi qoplama liniyalari"
+		},
+		"categ": {
+			"title1": "Kalit taslim dizayn",
+			"title2": "Sifatli xizmat",
+			"title3": "Kafolat",
+			"text1": "Biz bir qator xizmatlarni taqdim etamiz, buning natijasida loyiha qisqa vaqt ichida yakunlanadi.",
+			"text2": "Bizning bo'limlarimiz soni tufayli loyihangiz sifatli va o'z vaqtida yakunlanadi.",
+			"text3": "Mutaxassislarimizning ko'p yillik tajribasi, bajarilish sifatini unutmasdan, loyihani o'z vaqtida yetkazib berishni kafolatlaydi."
+		},
+		"about": {
+			"title": "Biz haqimizda",
+			"text1": "＂Vertikal Monolit＂ - bu eng murakkab vazifalarni muvaffaqiyatli bajaradigan tajribali qurilish mutaxassislari guruhi.",
+			"text2": "Jamoa 20 yildan ortiq tajribaga ega mutaxassislar, shuningdek, kamida 10 yillik tajribaga ega yosh va istiqbolli muhandislardan iborat."
+		},
+		"service": {
+			"title": "Bizning xizmatlarimiz",
+			"text1": "Yer osti va yer usti po'lat quvurlarini qurish va rekonstruksiya qilish.",
+			"text2": "Bino jabhalarini ta'mirlash va borish qiyin bo'lgan joylarda quvurlarni issiqlik izolatsiyasi.",
+			"text3": "Saytni obodonlashtirish, shahar kommunikatsiyalarini hisobga olgan holda qazish va tuproqni siqish bilan to'ldirish.",
+			"text4": "Suv quvurlarini sifatli va ishonchli tarzda o'tkazilishi va ularning doimiy nazoratini ta'minlash."
+		},
+		"works": {
+			"title": "Bizning ishlar"
+		},
+		"advantages": {
+			"title": "Bizning afzalliklarimiz",
+			"title1": "Kompleks xizmatlar",
+			"text1": "Biz loyiha bilan o'zaro bog'liq bo'lgan barcha turdagi xizmatlarni taqdim etamiz, biz tayyor ishlarni bajaramiz.",
+			"title2": "Malakali mutaxassislar",
+			"text2": "20 yildan ortiq tajribaga ega bo'lgan katta muhandislar rahbarligida 10 yillik tajribaga ega yosh istiqbolli muhandislar.",
+			"title3": "Ambitsiyali kompaniya",
+			"text3": "Katta tajriba va bilim bilan. Ular qurilish jarayonida duch keladigan eng qiyin muammolarni hal qilishadi.",
+			"title4": "Davlat buyurtmalari bilan ishlash tajribasi",
+			"text4": "Barcha loyihalarimiz Toshkent shahri aholisini issiqlik bilan ta’minlash kabi strategik ahamiyatga ega ob’ektlar va ijtimoiy ahamiyatga ega ob’ektlar bilan bog‘liq edi.",
+			"title5": "Standartga muvofiq materiallar",
+			"text5": "Qurilish materiallaridan faqat sifat sertifikatlariga ega bo'lgan taniqli va tasdiqlangan ishlab chiqaruvchilardan foydalanish."
+		},
+		"quality": {
+			"title": "Siz ishonishingiz mumkin bo'lgan sifat:"
+		},
+		"form": {
+			"title": "Biz shu yerdamiz!",
+			"address": "Беш Агач, Furkat St, Tashkent",
+			"contact": "Biz bilan bog'lanish",
+			"input1": "Ismingiz: ",
+			"input2": "Nomeringiz: ",
+			"input3": "Xabaringizni kiriting:",
+			"btn": "Xabarlaringizni yuboring"
+		}
+	},
+	"about": {
+		"showcase": {
+			"company": "Kompaniya",
+			"title": "Biz haqimizda",
+			"text": "Qayta tiklanadigan energiyaga ixtisoslashgan dinamik va muvaffaqiyatli rivojlanayotgan kompaniya. Kompaniyamiz O‘zbekistonda ekologik energiya va yetakchi texnologiyalar sohasida yetakchilardan biri hisoblanadi."
+		},
+		"aboutIntro": {
+			"title": "Men uslublarning keng doirasini taqdim etaman",
+			"text1": "Shu jumladan er osti va yer usti po'lat quvurlarini qurish va rekonstruksiya qilish, shuningdek, binolarning jabhalarini ta'mirlash va borish qiyin bo'lgan joylarda quvurlarni issiqlik izolatsiyasi. Biz qurilish materiallaridan faqat sifat sertifikatiga ega ishonchli ishlab chiqaruvchilardan foydalanamiz.",
+			"text2": "Biz loyihani amalga oshirishga kompleks yondashamiz, jumladan, saytni yaxshilash, shahar kommunikatsiyalarini hisobga olgan holda qazish va tuproqni siqish bilan to'ldirish."
+		},
+		"perfect": {
+			"title": "Barcha loyihalarimiz strategik ahamiyatga ega ob'ektlar bilan bog'liq",
+			"text": "Toshkent shahri aholisini, maktab, bog‘cha va davlat korxonalari kabi ijtimoiy ahamiyatga ega ob’ektlarni issiqlik bilan ta’minlash kabilar. Tasdiqlangan texnologiyalar va mutaxassislarimizning tajribasi tufayli biz ishimizning yuqori sifati va ishonchliligiga kafolat beramiz."
+		}
+	},
+	"projects": {
+		"title": "BIZNING LOYIHALAR",
+		"cards": {
+			"title1": "1. Qazishmalar va quvurlar",
+			"title2": "2. Quvur sirtini himoyalash",
+			"title3": "3. Ta'mirlash va sozlash",
+			"title4": "4. Mustahkamlash va yangilash",
+			"title5": "5. Yer yuzasini asl holatiga qaytarish",
+			"title6": "6. Tozalash va obodonlashtirish"
+		}
+	},
+	"contact": {
+		"contact": "Aloqalar",
+		"address": "Manzil"
+	}
+}

@@ -47,9 +47,10 @@
 
 				.border {
 					min-height: 220px;
-					height: 250px;
+					height: 260px;
 					border: 6px solid #ffffff;
 					border-radius: 30px;
+					overflow: hidden;
 					.legend {
 						img {
 							margin: 0px 22px 10px;

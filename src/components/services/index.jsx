@@ -6,13 +6,15 @@ import img2 from "../../assets/man-slice2.png";
 import img3 from "../../assets/man-slice3.png";
 // import border from "../../assets/border.png";
 // images //
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<div className="container">
 				<div className={scss.services__head}>
-					<Title titleName={"Наши услуги"}  />
+					<Title titleName={t("home.service.title")} />
 					<img src="" alt="" />
 				</div>
 				<div className={scss.services}>
@@ -30,30 +32,22 @@ const Services = () => {
 					</div>
 					<div className={scss.services__right}>
 						<div className={scss.services__right__blog}>
+							<p>{t("home.service.text1")}</p>
+						</div>
+						<hr />
+						<div className={scss.services__right__blog}>
+							<p>{t("home.service.text2")}</p>
+						</div>
+						<hr />
+						<div className={scss.services__right__blog}>
 							<p>
-								Строительство и реконструкция как подземных, так и надземных
-								стальных труб
+								{t("home.service.text3")} 
 							</p>
 						</div>
 						<hr />
 						<div className={scss.services__right__blog}>
 							<p>
-								Ремонт фасадов зданий и теплоизоляция труб в труднодоступных
-								местах
-							</p>
-						</div>
-						<hr />
-						<div className={scss.services__right__blog}>
-							<p>
-								Благоустройство объекта, раскопка с учетом городских
-								коммуникаций и обратная засыпка с уплотнением грунта
-							</p>
-						</div>
-						<hr />
-						<div className={scss.services__right__blog}>
-							<p>
-								Благоустройство объекта, раскопка с учетом городских
-								коммуникаций и обратная засыпка с уплотнением грунта
+								{t("home.service.text4")} 
 							</p>
 						</div>
 					</div>

@@ -93,3 +93,8 @@ h2 {
 		display: block;
 	}
 }
+.active {
+	color: $mainColor;
+	font-weight: 600 !important;
+	transform: scale(1.02);
+}

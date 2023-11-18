@@ -1,13 +1,13 @@
 @import "../../styles/variables.scss";
 
 .category {
-  position: relative;
-  top: -110px;
-  z-index: 10;
-  @media (max-width: $lg) {
-    top: -180px;
-  }
-  @media (max-width: $sm) {
-    margin-bottom: -180px;
-  }
+	position: relative;
+	top: -110px;
+	z-index: 10;
+	@media (max-width: $lg) {
+		top: -180px;
+	}
+	@media (max-width: $sm) {
+		margin-bottom: -180px;
+	}
 }
